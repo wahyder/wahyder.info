@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waheed Ahmed Hyder — Technical Lead Manager</title>
+  <link rel="stylesheet" href="_ds/industry-94f44a51-1edf-441c-8c8d-4218937f6847/styles.css">
+  <script src="_ds/industry-94f44a51-1edf-441c-8c8d-4218937f6847/_ds_bundle.js"></script>
+  <script src="./image-slot.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); }
+    a { color: var(--color-accent-700); text-decoration: none; }
+    a:hover { color: var(--color-accent-900); }
+  </style>
+</helmet>
+
+<header class="nav" style="position: sticky; top: 0; z-index: 10; background: var(--color-bg); border-bottom: 1px solid var(--color-neutral-300); display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-3) var(--space-5); flex-wrap: wrap;">
+  <a class="nav-brand" href="#top" style="font-family: var(--font-heading); font-weight: 700; font-size: 20px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text);">wahyder<span style="color: var(--color-accent);">.info</span></a>
+  <nav style="display: flex; gap: var(--space-4); flex-wrap: wrap; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.08em; font-size: 14px;">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section style="max-width: 1200px; margin: 0 auto; padding: var(--space-8) var(--space-5) var(--space-7); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--space-6); align-items: end;">
+    <figure class="blueprint duotone" style="margin: 0; position: relative; aspect-ratio: 3 / 4; border: 1px solid var(--color-neutral-300); max-width: 380px; width: 100%;">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <image-slot id="portrait" shape="rect" src="assets/portrait.jpeg" placeholder="Drop your portrait photo" style="position: absolute; inset: 0; width: 100%; height: 100%;"></image-slot>
+    </figure>
+    <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+      <span class="tag tag-accent" style="align-self: flex-start;">Hyderabad, India · Open to leadership roles</span>
+      <h1 style="margin: 0; font-family: var(--font-heading); font-weight: 700; font-size: clamp(48px, 8vw, 104px); line-height: 0.92; text-transform: uppercase; letter-spacing: -0.01em;">Waheed Ahmed<br>Hyder</h1>
+      <p style="margin: 0; font-family: var(--font-heading); font-size: 26px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-accent-700);">Technical Lead Manager · IBM</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; text-wrap: pretty;">Seasoned Tech Lead and Engineering Manager with 18+ years of experience in designing and delivering scalable web and enterprise applications. Expert in MEAN stack development, software architecture, and agile methodologies.</p>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+        <a class="btn btn-primary blueprint" href="mailto:w_a_hyder@yahoo.com" style="color: var(--color-bg);">Get in touch<i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i></a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/waheed-ahmed-hyder" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-secondary" href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener">Credly</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: var(--color-accent-900); color: var(--color-bg);">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+        <div style="padding: var(--space-5); border-left: 1px solid var(--color-accent-700); display: flex; flex-direction: column; gap: var(--space-1);">
+          <span style="font-family: var(--font-heading); font-weight: 700; font-size: 56px; line-height: 1;">{{ s.value }}</span>
+          <span style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: var(--color-accent-100);">{{ s.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="experience" style="max-width: 1200px; margin: 0 auto; padding: var(--space-8) var(--space-5) 0;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-5);">
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 48px; text-transform: uppercase;">Experience</h2>
+      <span style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: var(--color-neutral-600);">01 / 2007 — Present</span>
+    </div>
+    <div style="border-top: 1px solid var(--color-neutral-300);">
+      <sc-for list="{{ experience }}" as="e" hint-placeholder-count="8">
+        <div style="display: grid; grid-template-columns: minmax(140px, 200px) minmax(0, 1fr); gap: var(--space-5); padding: var(--space-4) 0; border-bottom: 1px solid var(--color-neutral-300);">
+          <span style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.06em; font-size: 15px; color: var(--color-accent-700); padding-top: 4px;">{{ e.dates }}</span>
+          <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+            <div style="display: flex; gap: var(--space-2) var(--space-3); flex-wrap: wrap; align-items: baseline;">
+              <h3 style="margin: 0; font-family: var(--font-heading); font-size: 26px; font-weight: 600;">{{ e.role }}</h3>
+              <span style="font-size: 16px; color: var(--color-neutral-700);">{{ e.company }}</span>
+            </div>
+            <p style="margin: 0; line-height: 1.6; max-width: 72ch; text-wrap: pretty;">{{ e.summary }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="projects" style="max-width: 1200px; margin: 0 auto; padding: var(--space-8) var(--space-5) 0;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-5);">
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 48px; text-transform: uppercase;">Selected Projects</h2>
+      <span style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: var(--color-neutral-600);">02 / Enterprise</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--space-4);">
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="6">
+        <article class="card blueprint" style="display: flex; flex-direction: column; gap: var(--space-3);">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <span class="card-kicker">{{ p.client }}</span>
+          <h3 class="card-title" style="margin: 0;">{{ p.title }}</h3>
+          <p class="card-body" style="margin: 0; line-height: 1.6; flex: 1;">{{ p.body }}</p>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <sc-for list="{{ p.tech }}" as="t" hint-placeholder-count="3">
+              <span class="tag tag-outline">{{ t }}</span>
+            </sc-for>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+
+    <sc-if value="{{ showEarlyWork }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3);">
+        <h3 style="margin: 0; font-family: var(--font-heading); font-size: 24px; text-transform: uppercase; letter-spacing: 0.04em;">Early web work · 2007 — 2012</h3>
+        <p style="margin: 0; color: var(--color-neutral-700); max-width: 72ch; line-height: 1.6;">Client websites and portals built in PHP, CodeIgniter, ASP.NET, WordPress, Drupal and Flash — from requirements and front-end templates to payment gateways, SEO and deployment.</p>
+        <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+          <sc-for list="{{ earlyWork }}" as="w" hint-placeholder-count="12">
+            <span class="tag tag-neutral">{{ w }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+  </section>
+
+  <section id="skills" style="max-width: 1200px; margin: 0 auto; padding: var(--space-8) var(--space-5) 0;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-5);">
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 48px; text-transform: uppercase;">Skills</h2>
+      <span style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: var(--color-neutral-600);">03 / Stack</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); border-top: 1px solid var(--color-neutral-300); border-left: 1px solid var(--color-neutral-300);">
+      <sc-for list="{{ skills }}" as="g" hint-placeholder-count="6">
+        <div style="padding: var(--space-4); border-right: 1px solid var(--color-neutral-300); border-bottom: 1px solid var(--color-neutral-300); display: flex; flex-direction: column; gap: var(--space-3);">
+          <h3 style="margin: 0; font-family: var(--font-heading); font-size: 20px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-accent-700);">{{ g.group }}</h3>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="4">
+              <span class="tag tag-accent">{{ it }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin: var(--space-4) 0 0; color: var(--color-neutral-700);">Domains: Insurance · Capital Markets · Banking · Health Care &nbsp;·&nbsp; Onsite: ABN AMRO (Netherlands), Euroclear (Brussels)</p>
+  </section>
+
+  <section id="certifications" style="max-width: 1200px; margin: 0 auto; padding: var(--space-8) var(--space-5) 0;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-5);">
+      <h2 style="margin: 0; font-family: var(--font-heading); font-size: 48px; text-transform: uppercase;">Certifications</h2>
+      <a class="btn btn-ghost" href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener">Verify on Credly →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 0 var(--space-5);">
+      <sc-for list="{{ certs }}" as="c" hint-placeholder-count="12">
+        <div style="padding: var(--space-3) 0; border-bottom: 1px solid var(--color-neutral-300); display: flex; flex-direction: column; gap: 2px;">
+          <span style="font-weight: 500; line-height: 1.4;">{{ c.name }}</span>
+          <span style="font-size: 13px; color: var(--color-neutral-600);">{{ c.note }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="margin-top: var(--space-5); display: flex; gap: var(--space-2) var(--space-5); flex-wrap: wrap; align-items: baseline;">
+      <span style="font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.1em; font-size: 14px; color: var(--color-accent-700);">Education</span>
+      <span>B.Tech / B.E., Electronics and Telecommunication Engineering — Jawaharlal Nehru University, 2005</span>
+    </div>
+  </section>
+
+  <section id="contact" style="max-width: 1200px; margin: 0 auto; padding: var(--space-8) var(--space-5);">
+    <div class="card blueprint" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--space-5); align-items: center; padding: var(--space-6);">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+        <h2 style="margin: 0; font-family: var(--font-heading); font-size: 48px; text-transform: uppercase; line-height: 1;">Let's build something</h2>
+        <p style="margin: 0; color: var(--color-neutral-700);">Languages: English, Hindi, Telugu, Urdu</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: var(--space-2); font-size: 18px;">
+        <a href="mailto:w_a_hyder@yahoo.com">w_a_hyder@yahoo.com</a>
+        <a href="tel:+919652183010">+91 96521 83010</a>
+        <a href="https://www.linkedin.com/in/waheed-ahmed-hyder" target="_blank" rel="noopener">linkedin.com/in/waheed-ahmed-hyder</a>
+        <a href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener">credly.com/users/waheed-ahmed-hyder</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#5980a6"></rect><text x="50" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="30" fill="#f2f2f3">WH</text></svg></template>
+<footer style="border-top: 1px solid var(--color-neutral-300);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: var(--space-4) var(--space-5); display: flex; justify-content: space-between; gap: var(--space-3); flex-wrap: wrap; font-size: 13px; color: var(--color-neutral-600);">
+    <span>© 2026 Waheed Ahmed Hyder</span>
+    <span>wahyder.info</span>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showEarlyWork&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showEarlyWork: this.props.showEarlyWork ?? true,
+      stats: [
+        { value: '18+', label: 'Years in engineering' },
+        { value: '8', label: 'Companies' },
+        { value: '32', label: 'Largest team led' },
+        { value: '12', label: 'Certifications' }
+      ],
+      experience: [
+        { dates: 'Apr 2021 — Present', role: 'Technical Lead Manager', company: 'IBM India Pvt. Limited', summary: 'Directing a high-performing technical team to design and deliver scalable, robust web applications. Implemented and championed Agile methodologies, increasing team productivity and driving continuous process improvements.' },
+        { dates: 'Oct 2019 — Mar 2021', role: 'Software Engineer', company: 'Wells Fargo', summary: 'Led UI development for multiple projects utilizing Angular, ReactJS, and NodeJS/Python frameworks, and QA automation using Ranorex.' },
+        { dates: 'Jul 2017 — Jul 2019', role: 'Senior Associate', company: 'Cognizant Technology Solutions', summary: 'Spearheaded full stack web development and served as technical lead for multiple high-impact web applications. Designed and implemented scalable RESTful APIs using Angular, ZendPHP, and Node.js.' },
+        { dates: 'Jul 2012 — May 2017', role: 'Consultant', company: 'Capgemini India Pvt. Ltd.', summary: 'Developed dynamic frontend applications using AngularJS and NodeJS. Onsite engagements with ABN AMRO (Netherlands) and Euroclear (Brussels).' },
+        { dates: 'Feb 2011 — Jul 2012', role: 'Technical Lead', company: 'Thrikasa Software Solutions LLP', summary: 'Directed and coordinated a cross-functional product development team of 32 members.' },
+        { dates: 'Jan 2010 — Jan 2011', role: 'Sr Web Master', company: 'DFI InfoTech', summary: 'Managed and maintained web applications, ensuring uptime and performance, and updated system designs to improve functionality.' },
+        { dates: 'Aug 2008 — May 2009', role: 'CSE Web Developer', company: 'Cappella Interactive', summary: 'Developed and implemented web solutions tailored for customer support applications.' },
+        { dates: 'Jun 2007 — May 2008', role: 'Web Developer', company: 'Ashrafi Associates', summary: 'Engineered high-performance web applications using ASP.NET and MSSQL.' }
+      ],
+      projects: [
+        { client: 'Chubb · Insurance', title: 'Claims Intake Portal', body: 'Scalable insurance claim intake portal that streamlined claim processing workflows and reduced claim handling time, with an intuitive UI that raised customer satisfaction.', tech: ['React.js', 'Node.js', 'Cloud'] },
+        { client: 'IBM · Supply chain', title: 'ADRP — Automated Discrepancy Resolution', body: 'Platform to track and reconcile disputes, facilitating collaboration among suppliers and vendors for faster resolution.', tech: ['MEAN', 'Kafka', 'PostgreSQL'] },
+        { client: 'Delta Air Lines', title: 'Zulu', body: "Modernization of Delta's cloud applications for performance and scalability, alongside UX/UI improvements that increased customer engagement.", tech: ['Angular', 'Cloud', 'UX/UI'] },
+        { client: 'Fidelity USA', title: 'fidelity.com', body: 'Front-end development, widget and plug-in development, and unit testing in an eight-person UI team.', tech: ['AngularJS', 'Sails', 'HighCharts'] },
+        { client: 'ABN AMRO · Netherlands', title: 'Soft Logon & SEPA Address Book', body: 'Scrum developer on two banking channel applications, including Single Euro Payments Area (SEPA) address book, working with Specification by Example.', tech: ['JavaScript', 'jQuery', 'Jasmine'] },
+        { client: 'Euroclear · Brussels', title: 'Easyway', body: 'UI development for the Easyway capital-markets applications as part of an onsite Scrum team.', tech: ['MVC 4.5', 'Telerik', 'TFS'] },
+        { client: 'GE · USA', title: 'Protractor Module', body: 'Front-end UI with SVG-based visualisation and advanced JavaScript components.', tech: ['AngularJS', 'SVG', 'Handlebars'] },
+        { client: 'Remarque Systems · USA', title: 'Clinical Data UI', body: 'Data-grid and charting interfaces on an ASP.NET MVC and Azure stack.', tech: ['ASP.NET MVC', 'UI Grid', 'Azure'] },
+        { client: 'Sprint · Ominto · CNA', title: 'Consumer & Financial Web', body: 'UI development for sprint.com, ominto.com and CNA Financial — responsive front ends, REST integration and Jasmine unit tests.', tech: ['AngularJS', 'Spring MVC', 'REST'] }
+      ],
+      earlyWork: ['rxnaplex.com', 'deccanshaadi.com', 'cleartitleproperties.com', 'princetonauditgroup.com', 'cinestaronline.com', 'crescenttours.com.au', 'npublications.com', 'matrix.ac.in', '3com-solutions.co.uk', 'kaleems.com', 'quranheaven.com', 'voffice.thrikasasoft.com', 'uttamblastech.com', 'sunnimatri.com'],
+      skills: [
+        { group: 'Frontend', items: ['React.js', 'Next.js', 'Redux', 'Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'] },
+        { group: 'Backend', items: ['Node.js', 'MEAN / MERN', 'Loopback', '.NET Core', 'ASP.NET', 'Kafka'] },
+        { group: 'Data', items: ['PostgreSQL', 'MongoDB', 'SQL Server', 'Oracle', 'MySQL'] },
+        { group: 'Cloud', items: ['AWS', 'Azure', 'Azure Functions', 'IBM Cloud', 'OpenShift', 'SSO'] },
+        { group: 'DevOps', items: ['Docker', 'Kubernetes', 'GitHub Actions', 'Jenkins', 'Nexus', 'Git'] },
+        { group: 'Quality & Design', items: ['Playwright', 'Jasmine', 'Figma', 'Axure', 'Agile Scrum'] }
+      ],
+      certs: [
+        { name: 'AWS Certified Developer Associate', note: 'Valid until July 2026' },
+        { name: 'IBM Generative & Agentic AI Developer', note: 'Valid until December 2026' },
+        { name: 'Professional Scrum Master PSM I', note: 'Scrum.org' },
+        { name: 'PMI Disciplined Agile Senior Scrum Master (DASSM)', note: 'PMI' },
+        { name: 'IBM Cloud Advocate V2', note: 'IBM' },
+        { name: 'IBM Consulting — Core Experienced', note: 'IBM' },
+        { name: 'AWS Partner: Generative AI Essentials', note: 'Training badge' },
+        { name: 'Docker Essentials: A Developer Introduction', note: 'IBM' },
+        { name: 'Celonis Foundations', note: 'Celonis' },
+        { name: 'IBM Microsoft Copilot Summit', note: 'IBM' },
+        { name: 'Insurance Insights and Solutions (Silver)', note: 'IBM' },
+        { name: 'Insurance Insights and Solutions (Bronze)', note: 'IBM' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
