@@ -193,20 +193,38 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {[
-              { name: 'AWS Certified Developer Associate', note: 'Valid until July 2026', icon: '☁️' },
-              { name: 'IBM Generative & Agentic AI Developer', note: 'Valid until December 2026', icon: '🤖' },
-              { name: 'Professional Scrum Master PSM I', note: 'Scrum.org', icon: '📋' },
-              { name: 'PMI Disciplined Agile Senior Scrum Master (DASSM)', note: 'PMI', icon: '⚙️' },
-              { name: 'IBM Cloud Advocate V2', note: 'IBM', icon: '☁️' },
-              { name: 'IBM Consulting — Core Experienced', note: 'IBM', icon: '💼' },
-              { name: 'AWS Partner: Generative AI Essentials', note: 'Training badge', icon: '🏅' },
-              { name: 'Docker Essentials: A Developer Introduction', note: 'IBM', icon: '🐳' },
-              { name: 'Celonis Foundations', note: 'Celonis', icon: '📊' },
-              { name: 'IBM Microsoft Copilot Summit', note: 'IBM', icon: '🎯' },
-              { name: 'Insurance Insights and Solutions (Silver)', note: 'IBM', icon: '🛡️' },
-              { name: 'Insurance Insights and Solutions (Bronze)', note: 'IBM', icon: '🛡️' }
+              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', icon: '📊' },
+              { name: 'IBM Generative & Agentic AI Expert - Developer', note: 'Expires Jul 14, 2027', icon: '🤖' },
+              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', icon: '🎓' },
+              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', icon: '🏆' },
+              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', icon: '🤖' },
+              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', icon: '📚' },
+              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', icon: '⚙️' },
+              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', icon: '📖' },
+              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', icon: '📈' },
+              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', icon: '💼' },
+              { name: 'Insurance Insights and Solutions (Silver)', note: 'Issued Nov 28, 2025', icon: '🛡️' },
+              { name: 'Insurance Insights and Solutions (Bronze)', note: 'Issued Nov 27, 2025', icon: '🛡️' },
+              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', icon: '🎯' },
+              { name: 'IBM Delivery Central Platform Foundations', note: 'Issued Feb 23, 2025', icon: '🏗️' },
+              { name: 'Method Essential', note: 'Issued Sep 2, 2025', icon: '✅' },
+              { name: 'AWS Partner: Generative AI Essentials', note: 'Issued Aug 25, 2025', icon: '☁️' },
+              { name: 'AWS Certified Developer – Associate', note: 'Expired Jul 29, 2026', icon: '☁️' },
+              { name: 'Professional Scrum Master™ I (PSM I)', note: 'Issued Dec 5, 2021', icon: '📋' },
+              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', icon: '🎤' },
+              { name: 'Docker Essentials: A Developer Introduction', note: 'Issued Oct 8, 2024', icon: '🐳' },
+              { name: 'Digital Product Engineering Essentials', note: 'Issued Jun 30, 2024', icon: '🔧' },
+              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', icon: '🔴' },
+              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', icon: '🤖' },
+              { name: 'IBM Certified Advocate - Cloud v2', note: 'Issued Jun 4, 2023', icon: '☁️' },
+              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', icon: '🏭' },
+              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', icon: '🛠️' },
+              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', icon: '📊' },
+              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', icon: '♿' },
+              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', icon: '🚀' },
+              { name: 'Scrum Foundation Professional Certification (SFPC™)', note: 'Expired Aug 2, 2022', icon: '📋' }
             ].map((cert, i) => (
-              <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="border border-gray-300 p-5 rounded hover:shadow-md hover:border-blue-400 transition cursor-pointer">
+              <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191/badges" target="_blank" rel="noopener" className="border border-gray-300 p-5 rounded hover:shadow-md hover:border-blue-400 transition cursor-pointer">
                 <div className="text-3xl mb-3">{cert.icon}</div>
                 <div className="font-semibold text-gray-900 text-sm">{cert.name}</div>
                 <div className="text-xs text-gray-600 mt-2">{cert.note}</div>
