@@ -25,12 +25,11 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-end">
             {/* Portrait */}
             <div className="relative aspect-video lg:aspect-auto lg:row-span-2">
-              <div className="border border-gray-300 bg-gray-100 h-full flex items-center justify-center rounded">
-                <div className="text-gray-400 text-center">
-                  <div className="text-6xl mb-2">📸</div>
-                  <p className="text-sm">Portrait photo</p>
-                </div>
-              </div>
+              <img
+                src="/portrait.jpg"
+                alt="Waheed Ahmed Hyder"
+                className="w-full h-full object-cover border border-gray-300 rounded"
+              />
             </div>
 
             {/* Main Content */}
@@ -186,36 +185,40 @@ export default function Home() {
         <section id="certifications" className="max-w-6xl mx-auto px-6 py-20">
           <div className="flex items-baseline justify-between gap-4 flex-wrap mb-8">
             <h2 className="text-5xl font-bold uppercase">Certifications</h2>
-            <a href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="text-sm font-semibold hover:text-blue-600 transition">
-              Verify on Credly →
+            <a href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="text-sm font-semibold hover:text-blue-600 transition flex items-center gap-2">
+              <span>🏆 View on Credly</span>
+              <span>→</span>
             </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-gray-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {[
-              { name: 'AWS Certified Developer Associate', note: 'Valid until July 2026' },
-              { name: 'IBM Generative & Agentic AI Developer', note: 'Valid until December 2026' },
-              { name: 'Professional Scrum Master PSM I', note: 'Scrum.org' },
-              { name: 'PMI Disciplined Agile Senior Scrum Master (DASSM)', note: 'PMI' },
-              { name: 'IBM Cloud Advocate V2', note: 'IBM' },
-              { name: 'IBM Consulting — Core Experienced', note: 'IBM' },
-              { name: 'AWS Partner: Generative AI Essentials', note: 'Training badge' },
-              { name: 'Docker Essentials: A Developer Introduction', note: 'IBM' },
-              { name: 'Celonis Foundations', note: 'Celonis' },
-              { name: 'IBM Microsoft Copilot Summit', note: 'IBM' },
-              { name: 'Insurance Insights and Solutions (Silver)', note: 'IBM' },
-              { name: 'Insurance Insights and Solutions (Bronze)', note: 'IBM' }
+              { name: 'AWS Certified Developer Associate', note: 'Valid until July 2026', icon: '☁️' },
+              { name: 'IBM Generative & Agentic AI Developer', note: 'Valid until December 2026', icon: '🤖' },
+              { name: 'Professional Scrum Master PSM I', note: 'Scrum.org', icon: '📋' },
+              { name: 'PMI Disciplined Agile Senior Scrum Master (DASSM)', note: 'PMI', icon: '⚙️' },
+              { name: 'IBM Cloud Advocate V2', note: 'IBM', icon: '☁️' },
+              { name: 'IBM Consulting — Core Experienced', note: 'IBM', icon: '💼' },
+              { name: 'AWS Partner: Generative AI Essentials', note: 'Training badge', icon: '🏅' },
+              { name: 'Docker Essentials: A Developer Introduction', note: 'IBM', icon: '🐳' },
+              { name: 'Celonis Foundations', note: 'Celonis', icon: '📊' },
+              { name: 'IBM Microsoft Copilot Summit', note: 'IBM', icon: '🎯' },
+              { name: 'Insurance Insights and Solutions (Silver)', note: 'IBM', icon: '🛡️' },
+              { name: 'Insurance Insights and Solutions (Bronze)', note: 'IBM', icon: '🛡️' }
             ].map((cert, i) => (
-              <div key={i} className="p-4 border-r border-b border-gray-300 last:border-r-0">
-                <div className="font-semibold text-gray-900">{cert.name}</div>
-                <div className="text-xs text-gray-600 mt-1">{cert.note}</div>
-              </div>
+              <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="border border-gray-300 p-5 rounded hover:shadow-md hover:border-blue-400 transition cursor-pointer">
+                <div className="text-3xl mb-3">{cert.icon}</div>
+                <div className="font-semibold text-gray-900 text-sm">{cert.name}</div>
+                <div className="text-xs text-gray-600 mt-2">{cert.note}</div>
+              </a>
             ))}
           </div>
 
-          <div className="mt-8 flex gap-6 flex-wrap items-baseline">
-            <span className="text-xs font-semibold text-blue-600 uppercase tracking-widest">Education</span>
-            <span className="text-gray-700">B.Tech / B.E., Electronics and Telecommunication Engineering — Jawaharlal Nehru University, 2005</span>
+          <div className="bg-blue-50 border border-blue-200 rounded p-6">
+            <div className="flex gap-6 flex-wrap items-baseline">
+              <span className="text-xs font-semibold text-blue-600 uppercase tracking-widest">📚 Education</span>
+              <span className="text-gray-700">B.Tech / B.E., Electronics and Telecommunication Engineering — Jawaharlal Nehru University, 2005</span>
+            </div>
           </div>
         </section>
 
