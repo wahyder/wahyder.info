@@ -193,43 +193,42 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
             {[
-              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', image: 'https://images.credly.com/images/731e7ef4-9b0c-4d7b-ab65-23cc699c0aa3/blob' },
-              { name: 'IBM Generative & Agentic AI Expert - Developer', note: 'Expires Jul 14, 2027', image: 'https://images.credly.com/images/3ca1feea-7209-462f-8b97-c4db28f597b9/IBM-Generative-Agentic-AI-Expert---Developer.png' },
-              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', image: 'https://images.credly.com/images/df4fe6f4-2060-45d4-9a09-160688785dbc/IBM_Bob_TS_Intermediate.png' },
-              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', image: 'https://images.credly.com/images/703c1e3c-800f-4050-b9c0-d6d259e3b187/2026-IBMer-watsonx-Challenge.png' },
-              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', image: 'https://images.credly.com/images/d610767c-c268-49a3-af8d-1b0e7ad8940b/IBM-Generative-and-Agentic-AI-Developer---Intermediate.png' },
-              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', image: 'https://images.credly.com/images/95ae9d80-bc45-40fa-84a1-45cba63bd44b/IBM-Generative-and-Agentic-AI-Foundation.png' },
-              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', image: 'https://images.credly.com/images/d41c463b-ef21-4bbc-8933-d7c5321c52b7/image.png' },
-              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', image: 'https://images.credly.com/images/5e2afabf-62f3-48ae-bbed-7e57c2e78c6a/blob' },
-              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', image: 'https://images.credly.com/images/7bdbf172-7abf-4335-93de-f357a04b8903/69eb775cc80a2549e6edea71.png' },
-              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', image: 'https://images.credly.com/images/5eaf1016-1e65-4960-8c55-a24e15c12f31/image.png' },
-              { name: 'Insurance Insights and Solutions (Silver)', note: 'Issued Nov 28, 2025', image: 'https://images.credly.com/images/a022933c-c5bf-40be-a239-d864ff698e05/Insurance-Industry-Silver.png' },
-              { name: 'Insurance Insights and Solutions (Bronze)', note: 'Issued Nov 27, 2025', image: 'https://images.credly.com/images/3d918cea-3f96-45f5-a272-109a909c2f4c/Insurance-Industry-Bronze.png' },
-              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', image: 'https://images.credly.com/images/1c518f83-871e-47cb-9eaa-e33dc6b3c841/Insurance-Industry-Jumpstart.png' },
-              { name: 'IBM Delivery Central Platform Foundations', note: 'Issued Feb 23, 2025', image: 'https://images.credly.com/images/bef4952f-f3d5-49e8-895f-072149aad1a7/image.png' },
-              { name: 'Method Essential', note: 'Issued Sep 2, 2025', image: 'https://images.credly.com/images/d94b8fbd-cb6a-4726-83e8-c9f328514dec/69e9d3d8becc0c6c0c5df678.png' },
-              { name: 'AWS Partner: Generative AI Essentials', note: 'Issued Aug 25, 2025', image: 'https://images.credly.com/images/4b547104-5ce9-43d5-8708-a7abb4b0c7ec/blob' },
-              { name: 'AWS Certified Developer – Associate', note: 'Expired Jul 29, 2026', image: 'https://images.credly.com/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png' },
-              { name: 'Professional Scrum Master™ I (PSM I)', note: 'Issued Dec 5, 2021', image: 'https://images.credly.com/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png' },
-              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', image: 'https://images.credly.com/images/8ad28495-0c01-4d78-a15b-1f4639d34445/image.png' },
-              { name: 'Docker Essentials: A Developer Introduction', note: 'Issued Oct 8, 2024', image: 'https://images.credly.com/images/b0c5445a-72a2-46ce-a599-96147e210efb/blob' },
-              { name: 'Digital Product Engineering Essentials', note: 'Issued Jun 30, 2024', image: 'https://images.credly.com/images/bb461953-ba43-489e-9389-282bfa8af482/digital-product-engineering-foundation-v2.png' },
-              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', image: 'https://images.credly.com/images/77237989-36a2-4eb5-853f-bcceeb2999b8/Red_Hat_OpenShift_Developer_I__Introduction_to_Containers_with_Podman.png' },
-              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', image: 'https://images.credly.com/images/47a15e48-3fd7-4c36-8f7e-639a65945ad8/image.png' },
-              { name: 'IBM Certified Advocate - Cloud v2', note: 'Issued Jun 4, 2023', image: 'https://images.credly.com/images/f5d671fd-e31b-461d-ae41-479753bf451f/image.png' },
-              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', image: 'https://images.credly.com/images/9beccf39-df2f-4025-b971-3a7ec6dfdbfa/image.png' },
-              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', image: 'https://images.credly.com/images/fb718a87-6d0d-4a6d-8068-677f1bec78f2/IBM_Garage_Essentials.png' },
-              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', image: 'https://images.credly.com/images/4ff66a5e-7ca4-4018-a50a-621d1075c1bc/Foundations-Learning-Foundational.png' },
-              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', image: 'https://images.credly.com/images/c7444263-2fd4-4936-a5f3-1b17bfac065a/image.png' },
-              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', image: 'https://images.credly.com/images/a972f054-be07-4845-85c7-95c8d11852f5/IBM-Agile-Explorer.png' },
-              { name: 'Scrum Foundation Professional Certification (SFPC™)', note: 'Expired Aug 2, 2022', image: 'https://images.credly.com/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png' },
-              { name: 'Disciplined Agile Senior Scrum Master (DASSM)', note: 'Expired Jun 12, 2025', image: 'https://images.credly.com/images/7f24336c-35e8-4fb9-8d48-0636ee850323/DA_Senior_Scrum_Master_Badge.png' }
+              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', icon: '📊' },
+              { name: 'IBM Generative & Agentic AI Expert', note: 'Expires Jul 14, 2027', icon: '🤖' },
+              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', icon: '🎓' },
+              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', icon: '🏆' },
+              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', icon: '🤖' },
+              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', icon: '📚' },
+              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', icon: '⚙️' },
+              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', icon: '📖' },
+              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', icon: '📈' },
+              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', icon: '💼' },
+              { name: 'Insurance Insights (Silver)', note: 'Issued Nov 28, 2025', icon: '🛡️' },
+              { name: 'Insurance Insights (Bronze)', note: 'Issued Nov 27, 2025', icon: '🛡️' },
+              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', icon: '🎯' },
+              { name: 'IBM Delivery Platform Foundations', note: 'Issued Feb 23, 2025', icon: '🏗️' },
+              { name: 'Method Essential', note: 'Issued Sep 2, 2025', icon: '✅' },
+              { name: 'AWS Partner: Gen AI Essentials', note: 'Issued Aug 25, 2025', icon: '☁️' },
+              { name: 'AWS Certified Developer', note: 'Expired Jul 29, 2026', icon: '☁️' },
+              { name: 'Professional Scrum Master™ I', note: 'Issued Dec 5, 2021', icon: '📋' },
+              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', icon: '🎤' },
+              { name: 'Docker Essentials', note: 'Issued Oct 8, 2024', icon: '🐳' },
+              { name: 'Digital Product Engineering', note: 'Issued Jun 30, 2024', icon: '🔧' },
+              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', icon: '🔴' },
+              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', icon: '🤖' },
+              { name: 'IBM Certified Advocate Cloud v2', note: 'Issued Jun 4, 2023', icon: '☁️' },
+              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', icon: '🏭' },
+              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', icon: '🛠️' },
+              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', icon: '📊' },
+              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', icon: '♿' },
+              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', icon: '🚀' },
+              { name: 'Scrum Foundation (SFPC™)', note: 'Expired Aug 2, 2022', icon: '📋' }
             ].map((cert, i) => (
               <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191/badges" target="_blank" rel="noopener" className="border border-gray-300 rounded overflow-hidden hover:shadow-lg hover:border-blue-400 transition cursor-pointer">
-                <div className="aspect-square overflow-hidden bg-gray-100">
-                  <img src={cert.image} alt={cert.name} className="w-full h-full object-cover hover:scale-105 transition" />
+                <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center hover:scale-105 transition">
+                  <div className="text-6xl">{cert.icon}</div>
                 </div>
-                <div className="p-2 text-center">
+                <div className="p-3 text-center">
                   <div className="font-semibold text-gray-900 text-xs line-clamp-2">{cert.name}</div>
                   <div className="text-xs text-gray-600 mt-1">{cert.note}</div>
                 </div>
@@ -253,11 +252,25 @@ export default function Home() {
               <p className="text-gray-700">Languages: English, Hindi, Telugu, Urdu</p>
             </div>
 
-            <div className="flex flex-col gap-4 text-lg">
-              <a href="mailto:w_a_hyder@yahoo.com" className="text-blue-600 hover:underline">w_a_hyder@yahoo.com</a>
-              <a href="tel:+919652183010" className="text-blue-600 hover:underline">+91 96521 83010</a>
-              <a href="https://www.linkedin.com/in/waheed-ahmed-hyder" target="_blank" rel="noopener" className="text-blue-600 hover:underline">linkedin.com/in/waheed-ahmed-hyder</a>
-              <a href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="text-blue-600 hover:underline">credly.com/users/waheed-ahmed-hyder</a>
+            <div className="flex flex-col gap-4">
+              <a href="https://www.linkedin.com/in/waheed-ahmed-hyder" target="_blank" rel="noopener" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition">
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                LinkedIn Profile
+              </a>
+
+              <a href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition">
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                Credly Badges
+              </a>
+
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <p className="text-gray-600 text-sm mb-4">📧 Email & 📱 Phone protected from bots</p>
+                <p className="text-gray-700 font-semibold">Connect via LinkedIn for direct communication</p>
+              </div>
             </div>
           </div>
         </section>
