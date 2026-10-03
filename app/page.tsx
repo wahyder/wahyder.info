@@ -211,45 +211,46 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
             {[
-              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', color: 'from-orange-400 to-orange-600' },
-              { name: 'IBM Generative & Agentic AI Expert', note: 'Expires Jul 14, 2027', color: 'from-purple-400 to-purple-600' },
-              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', color: 'from-blue-400 to-blue-600' },
-              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', color: 'from-yellow-400 to-yellow-600' },
-              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', color: 'from-indigo-400 to-indigo-600' },
-              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', color: 'from-cyan-400 to-cyan-600' },
-              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', color: 'from-teal-400 to-teal-600' },
-              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', color: 'from-green-400 to-green-600' },
-              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', color: 'from-emerald-400 to-emerald-600' },
-              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', color: 'from-rose-400 to-rose-600' },
-              { name: 'Insurance Insights (Silver)', note: 'Issued Nov 28, 2025', color: 'from-slate-400 to-slate-600' },
-              { name: 'Insurance Insights (Bronze)', note: 'Issued Nov 27, 2025', color: 'from-amber-400 to-amber-600' },
-              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', color: 'from-red-400 to-red-600' },
-              { name: 'IBM Delivery Platform Foundations', note: 'Issued Feb 23, 2025', color: 'from-pink-400 to-pink-600' },
-              { name: 'Method Essential', note: 'Issued Sep 2, 2025', color: 'from-lime-400 to-lime-600' },
-              { name: 'AWS Partner: Gen AI Essentials', note: 'Issued Aug 25, 2025', color: 'from-orange-300 to-orange-500' },
-              { name: 'AWS Certified Developer', note: 'Expired Jul 29, 2026', color: 'from-yellow-300 to-yellow-500' },
-              { name: 'Professional Scrum Master™ I', note: 'Issued Dec 5, 2021', color: 'from-blue-300 to-blue-500' },
-              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', color: 'from-purple-300 to-purple-500' },
-              { name: 'Docker Essentials', note: 'Issued Oct 8, 2024', color: 'from-cyan-300 to-cyan-500' },
-              { name: 'Digital Product Engineering', note: 'Issued Jun 30, 2024', color: 'from-green-300 to-green-500' },
-              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', color: 'from-red-300 to-red-500' },
-              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', color: 'from-indigo-300 to-indigo-500' },
-              { name: 'IBM Certified Advocate Cloud v2', note: 'Issued Jun 4, 2023', color: 'from-sky-300 to-sky-500' },
-              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', color: 'from-violet-300 to-violet-500' },
-              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', color: 'from-fuchsia-300 to-fuchsia-500' },
-              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', color: 'from-rose-300 to-rose-500' },
-              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', color: 'from-teal-300 to-teal-500' },
-              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', color: 'from-emerald-300 to-emerald-500' },
-              { name: 'Scrum Foundation (SFPC™)', note: 'Expired Aug 2, 2022', color: 'from-cyan-300 to-cyan-500' }
+              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', image: 'https://images.credly.com/images/731e7ef4-9b0c-4d7b-ab65-23cc699c0aa3/blob' },
+              { name: 'IBM Generative & Agentic AI Expert', note: 'Expires Jul 14, 2027', image: 'https://images.credly.com/images/3ca1feea-7209-462f-8b97-c4db28f597b9/IBM-Generative-Agentic-AI-Expert---Developer.png' },
+              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', image: 'https://images.credly.com/images/df4fe6f4-2060-45d4-9a09-160688785dbc/IBM_Bob_TS_Intermediate.png' },
+              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', image: 'https://images.credly.com/images/703c1e3c-800f-4050-b9c0-d6d259e3b187/2026-IBMer-watsonx-Challenge.png' },
+              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', image: 'https://images.credly.com/images/d610767c-c268-49a3-af8d-1b0e7ad8940b/IBM-Generative-and-Agentic-AI-Developer---Intermediate.png' },
+              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', image: 'https://images.credly.com/images/95ae9d80-bc45-40fa-84a1-45cba63bd44b/IBM-Generative-and-Agentic-AI-Foundation.png' },
+              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', image: 'https://images.credly.com/images/d41c463b-ef21-4bbc-8933-d7c5321c52b7/image.png' },
+              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', image: 'https://images.credly.com/images/5e2afabf-62f3-48ae-bbed-7e57c2e78c6a/blob' },
+              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', image: 'https://images.credly.com/images/7bdbf172-7abf-4335-93de-f357a04b8903/69eb775cc80a2549e6edea71.png' },
+              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', image: 'https://images.credly.com/images/5eaf1016-1e65-4960-8c55-a24e15c12f31/image.png' },
+              { name: 'Insurance Insights (Silver)', note: 'Issued Nov 28, 2025', image: 'https://images.credly.com/images/a022933c-c5bf-40be-a239-d864ff698e05/Insurance-Industry-Silver.png' },
+              { name: 'Insurance Insights (Bronze)', note: 'Issued Nov 27, 2025', image: 'https://images.credly.com/images/3d918cea-3f96-45f5-a272-109a909c2f4c/Insurance-Industry-Bronze.png' },
+              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', image: 'https://images.credly.com/images/1c518f83-871e-47cb-9eaa-e33dc6b3c841/Insurance-Industry-Jumpstart.png' },
+              { name: 'IBM Delivery Platform Foundations', note: 'Issued Feb 23, 2025', image: 'https://images.credly.com/images/bef4952f-f3d5-49e8-895f-072149aad1a7/image.png' },
+              { name: 'Method Essential', note: 'Issued Sep 2, 2025', image: 'https://images.credly.com/images/d94b8fbd-cb6a-4726-83e8-c9f328514dec/69e9d3d8becc0c6c0c5df678.png' },
+              { name: 'AWS Partner: Gen AI Essentials', note: 'Issued Aug 25, 2025', image: 'https://images.credly.com/images/4b547104-5ce9-43d5-8708-a7abb4b0c7ec/blob' },
+              { name: 'AWS Certified Developer', note: 'Expired Jul 29, 2026', image: 'https://images.credly.com/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png' },
+              { name: 'Professional Scrum Master™ I', note: 'Issued Dec 5, 2021', image: 'https://images.credly.com/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png' },
+              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', image: 'https://images.credly.com/images/8ad28495-0c01-4d78-a15b-1f4639d34445/image.png' },
+              { name: 'Docker Essentials', note: 'Issued Oct 8, 2024', image: 'https://images.credly.com/images/b0c5445a-72a2-46ce-a599-96147e210efb/blob' },
+              { name: 'Digital Product Engineering', note: 'Issued Jun 30, 2024', image: 'https://images.credly.com/images/bb461953-ba43-489e-9389-282bfa8af482/digital-product-engineering-foundation-v2.png' },
+              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', image: 'https://images.credly.com/images/77237989-36a2-4eb5-853f-bcceeb2999b8/Red_Hat_OpenShift_Developer_I__Introduction_to_Containers_with_Podman.png' },
+              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', image: 'https://images.credly.com/images/47a15e48-3fd7-4c36-8f7e-639a65945ad8/image.png' },
+              { name: 'IBM Certified Advocate Cloud v2', note: 'Issued Jun 4, 2023', image: 'https://images.credly.com/images/f5d671fd-e31b-461d-ae41-479753bf451f/image.png' },
+              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', image: 'https://images.credly.com/images/9beccf39-df2f-4025-b971-3a7ec6dfdbfa/image.png' },
+              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', image: 'https://images.credly.com/images/fb718a87-6d0d-4a6d-8068-677f1bec78f2/IBM_Garage_Essentials.png' },
+              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', image: 'https://images.credly.com/images/4ff66a5e-7ca4-4018-a50a-621d1075c1bc/Foundations-Learning-Foundational.png' },
+              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', image: 'https://images.credly.com/images/c7444263-2fd4-4936-a5f3-1b17bfac065a/image.png' },
+              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', image: 'https://images.credly.com/images/a972f054-be07-4845-85c7-95c8d11852f5/IBM-Agile-Explorer.png' },
+              { name: 'Scrum Foundation (SFPC™)', note: 'Expired Aug 2, 2022', image: 'https://images.credly.com/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png' }
             ].map((cert, i) => (
               <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191/badges" target="_blank" rel="noopener" className="border border-gray-300 rounded-lg overflow-hidden hover:shadow-xl hover:border-blue-400 transition cursor-pointer group">
-                <div className={`aspect-square bg-gradient-to-br ${cert.color} flex items-center justify-center hover:scale-105 transition relative overflow-hidden`}>
-                  {/* Badge shine effect */}
-                  <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  {/* Certificate icon using SVG */}
-                  <svg className="w-12 h-12 text-white drop-shadow-lg relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 15l-8.5-8.5M12 15l8.5-8.5M12 15v-9M3 5h18v12c0 1-1 2-2 2H5c-1 0-2-1-2-2V5z" />
-                  </svg>
+                <div className="aspect-square bg-gray-100 flex items-center justify-center hover:scale-105 transition relative overflow-hidden">
+                  {/* Actual Credly badge image */}
+                  <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-3 text-center">
                   <div className="font-semibold text-gray-900 text-xs line-clamp-2">{cert.name}</div>
