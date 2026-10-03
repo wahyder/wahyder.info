@@ -211,40 +211,45 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
             {[
-              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', icon: '📊' },
-              { name: 'IBM Generative & Agentic AI Expert', note: 'Expires Jul 14, 2027', icon: '🤖' },
-              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', icon: '🎓' },
-              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', icon: '🏆' },
-              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', icon: '🤖' },
-              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', icon: '📚' },
-              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', icon: '⚙️' },
-              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', icon: '📖' },
-              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', icon: '📈' },
-              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', icon: '💼' },
-              { name: 'Insurance Insights (Silver)', note: 'Issued Nov 28, 2025', icon: '🛡️' },
-              { name: 'Insurance Insights (Bronze)', note: 'Issued Nov 27, 2025', icon: '🛡️' },
-              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', icon: '🎯' },
-              { name: 'IBM Delivery Platform Foundations', note: 'Issued Feb 23, 2025', icon: '🏗️' },
-              { name: 'Method Essential', note: 'Issued Sep 2, 2025', icon: '✅' },
-              { name: 'AWS Partner: Gen AI Essentials', note: 'Issued Aug 25, 2025', icon: '☁️' },
-              { name: 'AWS Certified Developer', note: 'Expired Jul 29, 2026', icon: '☁️' },
-              { name: 'Professional Scrum Master™ I', note: 'Issued Dec 5, 2021', icon: '📋' },
-              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', icon: '🎤' },
-              { name: 'Docker Essentials', note: 'Issued Oct 8, 2024', icon: '🐳' },
-              { name: 'Digital Product Engineering', note: 'Issued Jun 30, 2024', icon: '🔧' },
-              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', icon: '🔴' },
-              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', icon: '🤖' },
-              { name: 'IBM Certified Advocate Cloud v2', note: 'Issued Jun 4, 2023', icon: '☁️' },
-              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', icon: '🏭' },
-              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', icon: '🛠️' },
-              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', icon: '📊' },
-              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', icon: '♿' },
-              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', icon: '🚀' },
-              { name: 'Scrum Foundation (SFPC™)', note: 'Expired Aug 2, 2022', icon: '📋' }
+              { name: 'Project Management Professional (PMP)®', note: 'Expires Jun 4, 2029', color: 'from-orange-400 to-orange-600' },
+              { name: 'IBM Generative & Agentic AI Expert', note: 'Expires Jul 14, 2027', color: 'from-purple-400 to-purple-600' },
+              { name: 'IBM Bob Intermediate', note: 'Expires Jul 14, 2027', color: 'from-blue-400 to-blue-600' },
+              { name: '2026 IBMer watsonx Challenge', note: 'Issued Jul 28, 2026', color: 'from-yellow-400 to-yellow-600' },
+              { name: 'IBM Generative & Agentic AI Developer', note: 'Expires Mar 1, 2027', color: 'from-indigo-400 to-indigo-600' },
+              { name: 'IBM Generative & Agentic AI Foundation', note: 'Expires Mar 1, 2027', color: 'from-cyan-400 to-cyan-600' },
+              { name: 'watsonx.governance Sales Foundation', note: 'Expires Mar 28, 2027', color: 'from-teal-400 to-teal-600' },
+              { name: 'Lifelong Learning 2026', note: 'Expires Apr 25, 2027', color: 'from-green-400 to-green-600' },
+              { name: 'IBM Growth Behaviors', note: 'Expires Dec 1, 2035', color: 'from-emerald-400 to-emerald-600' },
+              { name: 'IBM Consulting - Core Experienced', note: 'Issued Dec 26, 2025', color: 'from-rose-400 to-rose-600' },
+              { name: 'Insurance Insights (Silver)', note: 'Issued Nov 28, 2025', color: 'from-slate-400 to-slate-600' },
+              { name: 'Insurance Insights (Bronze)', note: 'Issued Nov 27, 2025', color: 'from-amber-400 to-amber-600' },
+              { name: 'Insurance Industry Jumpstart', note: 'Issued Nov 26, 2025', color: 'from-red-400 to-red-600' },
+              { name: 'IBM Delivery Platform Foundations', note: 'Issued Feb 23, 2025', color: 'from-pink-400 to-pink-600' },
+              { name: 'Method Essential', note: 'Issued Sep 2, 2025', color: 'from-lime-400 to-lime-600' },
+              { name: 'AWS Partner: Gen AI Essentials', note: 'Issued Aug 25, 2025', color: 'from-orange-300 to-orange-500' },
+              { name: 'AWS Certified Developer', note: 'Expired Jul 29, 2026', color: 'from-yellow-300 to-yellow-500' },
+              { name: 'Professional Scrum Master™ I', note: 'Issued Dec 5, 2021', color: 'from-blue-300 to-blue-500' },
+              { name: 'IBM Microsoft Copilot Summit', note: 'Issued Oct 15, 2024', color: 'from-purple-300 to-purple-500' },
+              { name: 'Docker Essentials', note: 'Issued Oct 8, 2024', color: 'from-cyan-300 to-cyan-500' },
+              { name: 'Digital Product Engineering', note: 'Issued Jun 30, 2024', color: 'from-green-300 to-green-500' },
+              { name: 'Red Hat OpenShift Developer I', note: 'Issued Jun 28, 2024', color: 'from-red-300 to-red-500' },
+              { name: 'IBM watsonx Essentials', note: 'Issued Mar 28, 2024', color: 'from-indigo-300 to-indigo-500' },
+              { name: 'IBM Certified Advocate Cloud v2', note: 'Issued Jun 4, 2023', color: 'from-sky-300 to-sky-500' },
+              { name: 'IBM Garage Foundation', note: 'Issued May 29, 2022', color: 'from-violet-300 to-violet-500' },
+              { name: 'IBM Garage Essentials', note: 'Issued May 23, 2022', color: 'from-fuchsia-300 to-fuchsia-500' },
+              { name: 'Celonis Foundations', note: 'Issued Apr 20, 2022', color: 'from-rose-300 to-rose-500' },
+              { name: 'Advancing Accessibility', note: 'Issued Apr 13, 2022', color: 'from-teal-300 to-teal-500' },
+              { name: 'IBM Agile Explorer', note: 'Issued Apr 10, 2022', color: 'from-emerald-300 to-emerald-500' },
+              { name: 'Scrum Foundation (SFPC™)', note: 'Expired Aug 2, 2022', color: 'from-cyan-300 to-cyan-500' }
             ].map((cert, i) => (
-              <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191/badges" target="_blank" rel="noopener" className="border border-gray-300 rounded overflow-hidden hover:shadow-lg hover:border-blue-400 transition cursor-pointer">
-                <div className="aspect-square bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center hover:scale-105 transition">
-                  <div className="text-6xl">{cert.icon}</div>
+              <a key={i} href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191/badges" target="_blank" rel="noopener" className="border border-gray-300 rounded-lg overflow-hidden hover:shadow-xl hover:border-blue-400 transition cursor-pointer group">
+                <div className={`aspect-square bg-gradient-to-br ${cert.color} flex items-center justify-center hover:scale-105 transition relative overflow-hidden`}>
+                  {/* Badge shine effect */}
+                  <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  {/* Certificate icon using SVG */}
+                  <svg className="w-12 h-12 text-white drop-shadow-lg relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 15l-8.5-8.5M12 15l8.5-8.5M12 15v-9M3 5h18v12c0 1-1 2-2 2H5c-1 0-2-1-2-2V5z" />
+                  </svg>
                 </div>
                 <div className="p-3 text-center">
                   <div className="font-semibold text-gray-900 text-xs line-clamp-2">{cert.name}</div>
