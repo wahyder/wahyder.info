@@ -264,7 +264,7 @@ export default function Home() {
 
               <div className="space-y-6">
                 <a href="https://www.linkedin.com/in/waheed-ahmed-hyder" target="_blank" rel="noopener" className="flex items-center gap-4 p-4 rounded-lg border border-gray-800 hover:border-yellow-400/50 hover:bg-yellow-400/5 transition group">
-                  <div className="text-2xl flex-shrink-0">💼</div>
+                  <div className="w-6 h-6 flex items-center justify-center text-yellow-400 flex-shrink-0 font-bold text-sm">in</div>
                   <div>
                     <div className="font-semibold group-hover:text-yellow-400 transition">LinkedIn Profile</div>
                     <div className="text-xs text-gray-500">Connect and follow</div>
