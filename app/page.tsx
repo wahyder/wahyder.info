@@ -89,34 +89,43 @@ export default function Home() {
 
         {/* Experience Section */}
         <section id="experience" className="max-w-6xl mx-auto px-6 py-20">
-          <div className="flex items-baseline justify-between gap-4 flex-wrap mb-8">
+          <div className="flex items-baseline justify-between gap-4 flex-wrap mb-12">
             <h2 className="text-5xl font-bold uppercase">Experience</h2>
             <span className="text-xs tracking-widest text-gray-600 uppercase">01 / 2007 — Present</span>
           </div>
 
-          <div className="border-t border-gray-300">
-            {[
-              { dates: 'Apr 2021 — Present', role: 'Technical Lead Manager', company: 'IBM India Pvt. Limited', summary: 'Directing a high-performing technical team to design and deliver scalable, robust web applications. Implemented and championed Agile methodologies, increasing team productivity and driving continuous process improvements.' },
-              { dates: 'Oct 2019 — Mar 2021', role: 'Software Engineer', company: 'Wells Fargo', summary: 'Led UI development for multiple projects utilizing Angular, ReactJS, and NodeJS/Python frameworks, and QA automation using Ranorex.' },
-              { dates: 'Jul 2017 — Jul 2019', role: 'Senior Associate', company: 'Cognizant Technology Solutions', summary: 'Spearheaded full stack web development and served as technical lead for multiple high-impact web applications. Designed and implemented scalable RESTful APIs using Angular, ZendPHP, and Node.js.' },
-              { dates: 'Jul 2012 — May 2017', role: 'Consultant', company: 'Capgemini India Pvt. Ltd.', summary: 'Developed dynamic frontend applications using AngularJS and NodeJS. Onsite engagements with ABN AMRO (Netherlands) and Euroclear (Brussels).' },
-              { dates: 'Feb 2011 — May 2012', role: 'Team Lead & Manager', company: 'Thrikasa Software Solutions', summary: 'Led development teams in building web applications, managed business requirements, and coordinated with stakeholders. Promoted to Manager role overseeing team operations and deliverables.' },
-              { dates: 'Jan 2010 — Jan 2011', role: 'Software Developer', company: 'DFI InfoTech', summary: 'Developed web applications using PHP and JavaScript. Focused on frontend development and database integration.' },
-              { dates: 'Aug 2008 — May 2009', role: 'Web Developer', company: 'Cappella Interactive', summary: 'Developed interactive web applications using Flash and JavaScript. Worked on diverse projects showcasing company services and solutions.' },
-              { dates: 'Jun 2007 — May 2008', role: 'Part-time Web Developer', company: 'Ashrafi Associates', summary: 'Developed frontend web applications on a part-time basis while building expertise in web technologies and client requirements.' },
-              { dates: '2009 — 2010', role: 'Freelance Web Developer', company: 'Self-employed', summary: 'Provided web development services as an independent contractor, building custom web solutions for various clients.' }
-            ].map((exp, i) => (
-              <div key={i} className="grid grid-cols-1 lg:grid-cols-5 gap-6 py-6 border-b border-gray-300 last:border-b-0">
-                <span className="text-xs font-semibold text-blue-600 uppercase tracking-widest">{exp.dates}</span>
-                <div className="lg:col-span-4 flex flex-col gap-2">
-                  <div className="flex gap-2 flex-wrap items-baseline">
-                    <h3 className="text-2xl font-semibold">{exp.role}</h3>
-                    <span className="text-gray-600">{exp.company}</span>
+          <div className="relative">
+            {/* Vertical timeline line */}
+            <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 to-blue-400 md:ml-[-2px]"></div>
+
+            <div className="space-y-12">
+              {[
+                { dates: 'Apr 2021 — Present', role: 'Technical Lead Manager', company: 'IBM India Pvt. Limited', summary: 'Directing a high-performing technical team to design and deliver scalable, robust web applications. Implemented and championed Agile methodologies, increasing team productivity and driving continuous process improvements.' },
+                { dates: 'Oct 2019 — Mar 2021', role: 'Software Engineer', company: 'Wells Fargo', summary: 'Led UI development for multiple projects utilizing Angular, ReactJS, and NodeJS/Python frameworks, and QA automation using Ranorex.' },
+                { dates: 'Jul 2017 — Jul 2019', role: 'Senior Associate', company: 'Cognizant Technology Solutions', summary: 'Spearheaded full stack web development and served as technical lead for multiple high-impact web applications. Designed and implemented scalable RESTful APIs using Angular, ZendPHP, and Node.js.' },
+                { dates: 'Jul 2012 — May 2017', role: 'Consultant', company: 'Capgemini India Pvt. Ltd.', summary: 'Developed dynamic frontend applications using AngularJS and NodeJS. Onsite engagements with ABN AMRO (Netherlands) and Euroclear (Brussels).' },
+                { dates: 'Feb 2011 — May 2012', role: 'Team Lead & Manager', company: 'Thrikasa Software Solutions', summary: 'Led development teams in building web applications, managed business requirements, and coordinated with stakeholders. Promoted to Manager role overseeing team operations and deliverables.' },
+                { dates: 'Jan 2010 — Jan 2011', role: 'Software Developer', company: 'DFI InfoTech', summary: 'Developed web applications using PHP and JavaScript. Focused on frontend development and database integration.' },
+                { dates: 'Aug 2008 — May 2009', role: 'Web Developer', company: 'Cappella Interactive', summary: 'Developed interactive web applications using Flash and JavaScript. Worked on diverse projects showcasing company services and solutions.' },
+                { dates: 'Jun 2007 — May 2008', role: 'Part-time Web Developer', company: 'Ashrafi Associates', summary: 'Developed frontend web applications on a part-time basis while building expertise in web technologies and client requirements.' },
+                { dates: '2009 — 2010', role: 'Freelance Web Developer', company: 'Self-employed', summary: 'Provided web development services as an independent contractor, building custom web solutions for various clients.' }
+              ].map((exp, i) => (
+                <div key={i} className="relative">
+                  {/* Timeline dot */}
+                  <div className="absolute left-0 md:left-1/2 -translate-x-1/2 -translate-y-1/2 top-6 w-5 h-5 bg-white border-4 border-blue-600 rounded-full z-10"></div>
+
+                  {/* Content */}
+                  <div className={`ml-8 md:ml-0 ${i % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12 md:ml-auto md:w-1/2'} md:w-1/2`}>
+                    <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-md hover:border-blue-300 transition-all">
+                      <span className="text-xs font-semibold text-blue-600 uppercase tracking-widest block mb-2">{exp.dates}</span>
+                      <h3 className="text-2xl font-semibold mb-1">{exp.role}</h3>
+                      <p className="text-gray-600 font-medium mb-3">{exp.company}</p>
+                      <p className="text-gray-700 leading-relaxed text-sm">{exp.summary}</p>
+                    </div>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">{exp.summary}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
 
