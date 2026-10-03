@@ -264,9 +264,7 @@ export default function Home() {
 
               <div className="space-y-6">
                 <a href="https://www.linkedin.com/in/waheed-ahmed-hyder" target="_blank" rel="noopener" className="flex items-center gap-4 p-4 rounded-lg border border-gray-800 hover:border-yellow-400/50 hover:bg-yellow-400/5 transition group">
-                  <svg className="w-6 h-6 text-yellow-400 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                  </svg>
+                  <div className="text-2xl flex-shrink-0">💼</div>
                   <div>
                     <div className="font-semibold group-hover:text-yellow-400 transition">LinkedIn Profile</div>
                     <div className="text-xs text-gray-500">Connect and follow</div>
@@ -274,9 +272,7 @@ export default function Home() {
                 </a>
 
                 <a href="https://www.credly.com/users/waheed-ahmed-hyder.07aa0191" target="_blank" rel="noopener" className="flex items-center gap-4 p-4 rounded-lg border border-gray-800 hover:border-yellow-400/50 hover:bg-yellow-400/5 transition group">
-                  <svg className="w-6 h-6 text-yellow-400 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                  </svg>
+                  <div className="text-2xl flex-shrink-0">🏆</div>
                   <div>
                     <div className="font-semibold group-hover:text-yellow-400 transition">View Certifications</div>
                     <div className="text-xs text-gray-500">30 Credly badges</div>
