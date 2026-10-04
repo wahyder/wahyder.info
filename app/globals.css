@@ -149,3 +149,17 @@ figure { margin: 0; }
   html { scroll-behavior: auto; }
   .job { transition: none; }
 }
+
+/* cover letter */
+.letter { max-width: 720px; padding: calc(3 * var(--u)) 0 calc(3 * var(--u)); display: flex; flex-direction: column; gap: 20px; font-size: 16px; line-height: 1.65; }
+.letter header { border-bottom: 2px solid var(--color-divider); padding-bottom: var(--u); }
+.letter h1 { font-size: clamp(34px, 5vw, 56px); letter-spacing: -0.03em; line-height: 1; }
+.letter .role { font-weight: 600; font-size: 20px; margin-top: 10px; }
+.letter .meta { font-size: 14px; color: var(--ink70); margin-top: 6px; }
+.letter p { color: var(--ink80); }
+.letter .sign { color: var(--color-text); margin-top: 8px; }
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; font-size: 12pt; }
+  .letter { padding: 0; max-width: none; }
+}

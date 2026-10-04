@@ -62,6 +62,14 @@ function Arrow({ size = 16 }: { size?: number }) {
   )
 }
 
+function Download({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+      <path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16" />
+    </svg>
+  )
+}
+
 const ext = { target: '_blank', rel: 'noopener noreferrer' } as const
 
 export default function Home() {
@@ -74,6 +82,7 @@ export default function Home() {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a href="/cover-letter">Cover letter</a>
         <a className="btn btn-primary" href="#contact">Get in touch</a>
       </nav>
 
@@ -87,6 +96,7 @@ export default function Home() {
             <div className="actions">
               <a className="btn btn-primary" href="#contact">Get in touch</a>
               <a className="btn btn-secondary" href={LINKEDIN} {...ext}>LinkedIn <Arrow /></a>
+              <a className="btn btn-secondary" href="/Waheed-Ahmed-Hyder-Resume.pdf" download>Download CV <Download /></a>
             </div>
           </div>
           <figure className="hero-fig">
@@ -186,7 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="wrap foot"><span>© 2026 Waheed Ahmed Hyder</span><span>wahyder.info</span></footer>
+      <footer className="wrap foot"><span>© 2026 Waheed Ahmed Hyder</span><span><a href="/Waheed-Ahmed-Hyder-Resume.pdf" download>Download CV</a> · <a href="/cover-letter">Cover letter</a> · wahyder.info</span></footer>
     </>
   )
 }
